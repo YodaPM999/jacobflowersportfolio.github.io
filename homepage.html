@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-US" style="scroll-behavior: smooth">
+    <title> Jacob Flowers Portfolio | Class Homepage</title>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="style.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="pieces-nav">
+            <nav id="sidenav" class="sidenav">
+                <a class="navlinks closebtn" href="javascript:void(0)" onclick="closeNav()">&times;</a>
+                <a class="navlinks" href="index.html">About the Designer</a>
+                <a class="navlinks" href="web.html">Web Designs</a>
+                <a class="navlinks" href="motion.html">Motion Pieces</a>
+                <a class="navlinks" href="other.html">Other Work</a>
+                <a class="navlinks" href="index.html#contact">Contact Me</a>
+            </nav>
+            <div class="navflex">
+                <span class="hamburger" onclick="openNav()"><i class="fa fa-bars"></i></span>
+                <h1 class="pieces-header">Class Homepage</h1>
+            </div>
+        </div>
+        <div class="pieces-grid">
+            <div class="left-side">
+                <div class="info">
+                    <h2>Description</h2>
+                    <p>The goal for this piece was to design the look of my class homepage for Interactive Design I. I decided to embrace an 8-bit styled Mario theme in pretty much every way possible. Everything from the navigation bar, to the border images, and even in the background are all filled to the brim with references and fun details</p>
+                </div>
+                <div class="info">
+                    <h2>Details</h2>
+                    <p>Context: Interactive Design I Project</p>
+                    <p>Software: Brackets, Adobe Photoshop, Adobe Illustrator</p>
+                    <p>Time Spent: 2-3 Weeks</p>
+                    <p>Typefaces: Rock'n'roll One, Instrument Sans</p>
+                    <p>Link:<a href="http://vbitbws.tcc.edu/~arty6/"> http://vbitbws.tcc.edu/~arty6/</a></p>
+                </div>
+            </div>
+            <div class="piece">
+                <img src="resources/homepage/homepage-mockup.png" width="820px">
+            </div>
+        </div>
+        <div class="process-grid">
+            <div class="info">
+                <h1 class="pieces-header2">Process</h1>
+                <p>Take a look at some of the preparation work that helped me realize the foundation of my design!</p>
+            </div>
+            <div class="process-container">
+                <img class="process" src="resources/homepage/process1.png">
+                <img class="process" src="resources/homepage/process2.png">
+                <button class="prev" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="next" onclick="plusDivs(+1)">&#10095;</button>
+            </div>
+        </div>
+    </body>
+    <!-- Sticky Navbar -->
+    <script>
+        window.onscroll = function() {myFunction()};
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+
+    </script>
+    <!-- Side Nav -->
+    <script>
+        function openNav() {
+            document.getElementById("sidenav").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("sidenav").style.width = "0px";
+        }
+    </script>
+    <!-- Slideshow -->
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("process");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length} ;
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex-1].style.display = "block";
+        }
+    </script>

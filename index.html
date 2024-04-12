@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-US" style="scroll-behavior: smooth">
+    <title> Jacob Flowers Portfolio | Home</title>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="style.css" rel="stylesheet"/>
+    </head>
+
+    <body class="content">
+        <div id="navbar">
+            <nav id="sidenav" class="sidenav">
+                <a class="navlinks closebtn" href="javascript:void(0)" onclick="closeNav()">&times;</a>
+                <a class="navlinks" href="#about">About the Designer</a>
+                <a class="navlinks" href="web.html">Web Designs</a>
+                <a class="navlinks" href="motion.html">Motion Pieces</a>
+                <a class="navlinks" href="other.html">Other Work</a>
+                <a class="navlinks" href="#contact">Contact Me</a>
+            </nav>
+            <div class="navflex">
+                <div class="flex-spacing">
+                    <span class="hamburger" onclick="openNav()"><i class="fa fa-bars"></i></span>
+                </div>
+                <img src="logo.png" alt="logo" width="125px" height="125px">
+                <h1 class="name">Jacob Flowers</h1>
+            </div>
+        </div>
+        <div id="main">
+            <section id="about">
+                <div class="about-grid">
+                    <div class="bio">
+                        <h2 class="about-designer">About the Designer</h2>
+                        <p>Hey there! My name is Jacob Flowers, and I've had a creative mind for as long as I can remember. As a designer, I like to experiment and have fun with my pieces. My style bursts with personality and livliness, but I am also capable of toning it down and keeping things classy and sophisticated when appropriate. I've put a lot of hours into each and every one of my pieces, and I hope you enjoy what you see!</p>
+                    </div>
+                    <img class="skills" src="skills.png" alt="skills">
+                </div>
+            </section>
+            <section id="work">
+                <h2 class="my-work">My Work</h2>
+                <div class="work-container">
+                    <div class="work-grid">
+                        <img src="web-preview.gif" alt="skills" width="400px">
+                        <a href="web.html"><h3 class="button-index">Web Designs</h3></a>
+                        <p>Everything related to my web design work. Includes the webpages themselves, wireframes, style tiles, and everything in between!</p>
+                    </div>
+                    <div class="work-grid">
+                        <img src="my-work-preview.gif" alt="skills" width="400px">
+                        <a href="motion.html"><h3 class="button-index">Motion Pieces</h3></a>
+                        <p>Here you can get a good look at all of my animations and the thought process behind each one!</p>
+                    </div>
+                    <div class="work-grid">
+                        <img src="other-preview.gif" alt="skills" width="400px">
+                        <a href="other.html"><h3 class="button-index">Other Media</h3></a>
+                        <p>All of my other cool stuff, ranging from editorial work, visual identity systems, poster designs, and more!</p>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+                <div class="contact">
+                    <h2>Interested? Reach out to me!</h2>
+                    <form action="action_page.php">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Name123@email.com...">
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </section>
+        </div>
+    </body>
+    <!-- Sticky Navbar -->
+    <script>
+        window.onscroll = function() {myFunction()};
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+
+    </script>
+    <!-- Side Nav -->
+    <script>
+        function openNav() {
+            document.getElementById("sidenav").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("sidenav").style.width = "0px";
+        }
+    </script>

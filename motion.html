@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US" style="scroll-behavior: smooth">
+    <title> Jacob Flowers Portfolio | Motion Pieces</title>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="style.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div id="navbar">
+            <nav id="sidenav" class="sidenav">
+                <a class="navlinks closebtn" href="javascript:void(0)" onclick="closeNav()">&times;</a>
+                <a class="navlinks" href="index.html">About the Designer</a>
+                <a class="navlinks" href="web.html">Web Designs</a>
+                <a class="navlinks" href="motion.html">Motion Pieces</a>
+                <a class="navlinks" href="other.html">Other Work</a>
+                <a class="navlinks" href="index.html#contact">Contact Me</a>
+            </nav>
+            <div class="navflex">
+                <div class="flex-spacing">
+                    <span class="hamburger" onclick="openNav()"><i class="fa fa-bars"></i></span>
+                </div>
+                <img src="logo.png" alt="logo" width="125px" height="125px">
+                <h1 class="name">Jacob Flowers</h1>
+            </div>
+        </div>
+        <h2 class="design-header">Motion Pieces</h2>
+        <div class="motion-grid">
+            <div class="dp">
+                <img src="resources/dance/dance-preview.gif" alt="dance party" width="500px">
+                <a href="dance-party.html"><h2 class="button">Geometric Dance Party</h2></a>
+            </div>
+            <div class="kt">
+                <img src="resources/kinetic/kinetic-preview.gif" alt="kinetic type" width="500px">
+                <a href="kinetic-type.html"><h2 class="button">Kinetic Type</h2></a>
+            </div>
+            <div class="ts">
+                <img src="resources/title-sequence/title-preview.gif" alt="title sequence" width="500px">
+                <a href="title-sequence.html"><h2 class="button">Title Sequence</h2></a>
+            </div>
+        </div>
+    </body>
+    <!-- Side Nav -->
+    <script>
+        function openNav() {
+            document.getElementById("sidenav").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("sidenav").style.width = "0px";
+        }
+    </script>

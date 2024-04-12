@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US" style="scroll-behavior: smooth">
+    <title> Jacob Flowers Portfolio | Web Pieces</title>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="style.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div id="navbar">
+            <nav id="sidenav" class="sidenav">
+                <a class="navlinks closebtn" href="javascript:void(0)" onclick="closeNav()">&times;</a>
+                <a class="navlinks" href="index.html">About the Designer</a>
+                <a class="navlinks" href="web.html">Web Designs</a>
+                <a class="navlinks" href="motion.html">Motion Pieces</a>
+                <a class="navlinks" href="other.html">Other Work</a>
+                <a class="navlinks" href="index.html#contact">Contact Me</a>
+            </nav>
+            <div class="navflex">
+                <div class="flex-spacing">
+                    <span class="hamburger" onclick="openNav()"><i class="fa fa-bars"></i></span>
+                </div>
+                <img src="logo.png" alt="logo" width="125px" height="125px">
+                <h1 class="name">Jacob Flowers</h1>
+            </div>
+        </div>
+        <h2 class="design-header">Web Designs</h2>
+        <div class="web-grid">
+            <div class="tl">
+                <img src="resources/timeline/timeline.png" alt="timeline" width="500px">
+                <a href="timeline.html"><h2 class="button">Timeline</h2></a>
+            </div>
+            <div class="sj">
+                <img src="resources/space/space.png" alt="space" width="500px">
+                <a href="space.html"><h2 class="button">Space Journey</h2></a>
+            </div>
+            <div class="ch">
+                <img src="resources/homepage/homepage.png" alt="homepage" width="500px">
+                <a href="homepage.html"><h2 class="button">Class Homepage</h2></a>
+            </div>
+            <div class="rf">
+                <img src="resources/responsive/responsive.png" alt="responsive" width="500px">
+                <a href="responsive.html"><h2 class="button">Responsive Framework</h2></a>
+            </div>
+        </div>
+    </body>
+    <!-- Side Nav -->
+    <script>
+        function openNav() {
+            document.getElementById("sidenav").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("sidenav").style.width = "0px";
+        }
+    </script>
