@@ -38,7 +38,7 @@ h3 {
     margin-top: 5%;
     margin-bottom: 5%;
     padding: 3%;
-    background-color: #fcfc97;
+    background-color: #f5f5b3;
     border-radius: 10px;
 }
 p {
@@ -139,7 +139,7 @@ a {
 .bio {
     max-width: 600px;
     padding: 5%;
-    background-color: #fcfc97;
+    background-color: #f5f5b3;
     border-radius: 100px;
 }
 .skills {
@@ -189,20 +189,20 @@ input[type=submit]:hover {
     margin-top: 10%;
     margin-bottom: 5%;
     padding: 3%;
-    background-color: #fcfc97;
+    background-color: #f5f5b3;
     border-radius: 10px;
 }
 .work-container {
     display: grid;
     grid-template-columns: auto auto auto;
-    justify-items: center;
 }
 .work-grid {
     display: grid;
     grid-template-columns: auto;
     max-width: 80%;
-    align-items: flex-start;
-    background-color: #fcfc97;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5b3;
     padding: 30px;
     border-radius: 60px;
 }
@@ -241,7 +241,7 @@ input[type=submit]:hover {
 .tl {
     grid-column: 2 / 2;
     grid-row: 1 / 1;
-    background-color: #fcfc97;
+    background-color: #f5f5b3;
     padding: 20px;
     border-radius: 30px;
     margin-bottom: 5%;
@@ -249,7 +249,7 @@ input[type=submit]:hover {
 .sj {
     grid-column: 4 / 4;
     grid-row: 1 / 1;
-    background-color: #fcfc97;
+    background-color: #f5f5b3;
     padding: 20px;
     border-radius: 30px;
     margin-bottom: 5%;
@@ -258,7 +258,7 @@ input[type=submit]:hover {
     grid-column: 2 / 2;
     grid-row: 2 / 2;
     padding-top: 10%;
-    background-color: #fcfc97;
+    background-color: #f5f5b3;
     padding: 20px;
     border-radius: 30px;
     margin-bottom: 5%;
@@ -267,7 +267,7 @@ input[type=submit]:hover {
     grid-column: 4 / 4;
     grid-row: 2 / 2;
     padding-top: 10%;
-    background-color: #fcfc97;
+    background-color: #f5f5b3;
     padding: 20px;
     border-radius: 30px;
     margin-bottom: 5%;
@@ -282,7 +282,7 @@ input[type=submit]:hover {
 .dp {
     grid-column: 2 / 2;
     grid-row: 1 / 1;
-    background-color: #fcfc97;
+    background-color: #f5f5b3;
     padding: 20px;
     border-radius: 30px;
     margin-bottom: 5%;
@@ -290,7 +290,7 @@ input[type=submit]:hover {
 .kt {
     grid-column: 4 / 4;
     grid-row: 1 / 1;
-    background-color: #fcfc97;
+    background-color: #f5f5b3;
     padding: 20px;
     border-radius: 30px;
     margin-bottom: 5%;
@@ -298,7 +298,7 @@ input[type=submit]:hover {
 .ts {
     grid-column: 2 / 2;
     grid-row: 2 / 2;
-    background-color: #fcfc97;
+    background-color: #f5f5b3;
     padding: 20px;
     border-radius: 30px;
     margin-bottom: 5%;
@@ -316,7 +316,7 @@ input[type=submit]:hover {
 .ci {
     grid-column: 2 / 2;
     grid-row: 1 / 1;
-    background-color: #fcfc97;
+    background-color: #f5f5b3;
     padding: 20px;
     border-radius: 30px;
     margin-bottom: 5%;
@@ -324,7 +324,7 @@ input[type=submit]:hover {
 .sp {
     grid-column: 4 / 4;
     grid-row: 1 / 1;
-    background-color: #fcfc97;
+    background-color: #f5f5b3;
     padding: 20px;
     border-radius: 30px;
     margin-bottom: 5%;
@@ -332,7 +332,7 @@ input[type=submit]:hover {
 .tp {
     grid-column: 2 / 2;
     grid-row: 2 / 2;
-    background-color: #fcfc97;
+    background-color: #f5f5b3;
     padding: 20px;
     border-radius: 30px;
     margin-bottom: 5%;
@@ -340,7 +340,7 @@ input[type=submit]:hover {
 .el {
     grid-column: 4 / 4;
     grid-row: 2 / 2;
-    background-color: #fcfc97;
+    background-color: #f5f5b3;
     padding: 20px;
     border-radius: 30px;
     margin-bottom: 5%;
@@ -348,7 +348,7 @@ input[type=submit]:hover {
 .is {
     grid-column: 2 / 2;
     grid-row: 3 / 3;
-    background-color: #fcfc97;
+    background-color: #f5f5b3;
     padding: 20px;
     border-radius: 30px;
     margin-bottom: 5%;
@@ -367,7 +367,7 @@ input[type=submit]:hover {
     text-align: center;
 }
 .info {
-    background-color: #fcfc97;
+    background-color: #f5f5b3;
     max-width: 500px;
     padding-top: 5px;
     padding-bottom: 20px;
