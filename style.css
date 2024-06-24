@@ -12,8 +12,8 @@ body {
 }
 /* Typography */
 h1 {
-    font-family: "Collector Comic";
-    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
     font-size: 36pt;
     color: white;
 }
@@ -237,6 +237,7 @@ input[type=submit]:hover {
     grid-template-columns: auto auto auto auto auto;
     grid-template-rows: auto auto;
     justify-items: center;
+    align-items: flex-start;
 }
 .tl {
     grid-column: 2 / 2;
@@ -278,6 +279,7 @@ input[type=submit]:hover {
     grid-template-columns: auto auto auto auto auto;
     grid-template-rows: auto auto;
     justify-items: center;
+    align-items: flex-start;
 }
 .dp {
     grid-column: 2 / 2;
@@ -313,24 +315,17 @@ input[type=submit]:hover {
     justify-items: center;
     align-items: flex-end;
 }
-.ci {
+.sp {
     grid-column: 2 / 2;
     grid-row: 1 / 1;
     background-color: #fcfc97;
     padding: 20px;
     border-radius: 30px;
     margin-bottom: 5%;
-}
-.sp {
-    grid-column: 4 / 4;
-    grid-row: 1 / 1;
-    background-color: #fcfc97;
-    padding: 20px;
-    border-radius: 30px;
-    margin-bottom: 5%;
+    align-self: flex-start;
 }
 .tp {
-    grid-column: 2 / 2;
+    grid-column: 4 / 4;
     grid-row: 2 / 2;
     background-color: #fcfc97;
     padding: 20px;
@@ -338,16 +333,17 @@ input[type=submit]:hover {
     margin-bottom: 5%;
 }
 .el {
-    grid-column: 4 / 4;
+    grid-column: 2 / 2;
     grid-row: 2 / 2;
     background-color: #fcfc97;
     padding: 20px;
     border-radius: 30px;
     margin-bottom: 5%;
+    align-self: flex-start;
 }
 .is {
-    grid-column: 2 / 2;
-    grid-row: 3 / 3;
+    grid-column: 4 / 4;
+    grid-row: 1 / 1;
     background-color: #fcfc97;
     padding: 20px;
     border-radius: 30px;
@@ -428,4 +424,20 @@ input[type=submit]:hover {
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-width: 480px ) {
+    
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    
+}
+
+@media screen and (min-width: 1025px) {
+    
 }
