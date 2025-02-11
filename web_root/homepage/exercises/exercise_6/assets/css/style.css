@@ -1,0 +1,223 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*	A CSS rule has the following syntax:
+selector { property: style; property: style; property: style; }
+
+For a list of CSS properties, see the w3Schools website @ https://www.w3schools.com
+
+/*	Your Name
+Date
+==================================================
+Table of Contents
+==================================================
+:: Typography
+:: Footer
+:: Blockquotes
+:: Figures
+:: Navigation
+:: Article
+:: Background Images
+:: Header
+*/
+
+/*	Typography
+================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rubik:wght@900&display=swap');
+body {
+    color: #262f3c;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 3em;
+    text-align: center;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #c33;
+    margin-bottom: 1px;
+}
+h2 {
+    font-size: 3em;
+    text-transform: lowercase;
+    letter-spacing: .25em;
+}
+h3 {
+    font-size: 3em;
+}
+h4 {
+    font-size: 2em;
+}
+a:link {
+    color: #c33;
+}
+a:visited {
+    color: #666;
+}
+a:hover {
+    color: #000;
+    text-decoration: none;
+}
+a:active {
+    color: #000;
+    text-decoration: none;
+}
+.kicker {
+    font-size: 1.5em;
+}
+.title {
+    font-size: 3em;
+    letter-spacing: .015em;
+    line-height: .75em;
+}
+.sub-title {
+    letter-spacing: .27em;
+    text-transform: uppercase;
+}
+
+/*	Footer
+================================================== */
+footer {
+    background-color: #262f3c;
+    color: #ddd6ce;
+    padding: 25px 30px 40px;
+    font-size: .75em;
+}
+.sources {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .5em;
+}
+footer p {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/*	Blockquotes
+================================================== */
+blockquote {
+    background: rgba(242, 242, 242, 0.9);
+    width: 800px;
+    padding: 10px 50px;
+    font-size: 1.25em;
+    border-left: 9px solid #c33;
+    margin: auto;
+    hanging-punctuation: first;
+}
+cite {
+    font-style: normal;
+    font-size: smaller;
+}
+hr {
+    height: 100px;
+    width: 1260px;
+    border: 0;
+    border-bottom: 1px dotted #232930;
+    margin: 2em auto;
+}
+
+/*	Figures
+================================================== */
+figure {
+    background-color: #f2f2f2;
+    width: 350px;
+    padding: 30px;
+    border-right: 9px solid #c33;
+    float: right;
+    clear: right;
+}
+figcaption {
+    font-size: .7em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+/*	Navigation
+================================================== */ 
+nav {
+    background-color: #262f3c;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+nav a:link, nav a:visited {
+    color: #f2f2f2;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+    font-weight: bold;
+    display: block;
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 14px 0;
+}
+nav a:hover, nav a:active, nav a.current {
+    background-color: #c33;
+}
+
+
+/*	Article
+================================================== */
+article {
+    background-color: rgba(232, 225, 217, .9);
+    width: 1200px;
+    margin: 0 auto 50px;
+    padding: 30px;
+}
+article p {
+    max-width: 800px;
+}
+
+
+/*	Background Images
+================================================== */
+.biography {
+    background-image: url("../images/bkgd-biography.gif");
+}
+.design {
+    background-image: url("../images/bkgd-design.gif");
+}
+.typefaces {
+    background-image: url("../images/bkgd-typefaces.gif");
+}
+.new-typography {
+    background-image: url("../images/bkgd-new-typography.gif");
+}
+.biography, .design, .new-typography, .typefaces {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/*	Header
+================================================== */
+.material-icons {
+    font-size: 3em;
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+}
+header a:link, header a:visited {
+    color: #262f3c;
+    text-decoration: none;
+}
+header a:hover, header a:active {
+    color: #c33;
+}
+header {
+    height: 100vh;
+}
+.center-v {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+html {
+    scroll-behavior: smooth;
+}

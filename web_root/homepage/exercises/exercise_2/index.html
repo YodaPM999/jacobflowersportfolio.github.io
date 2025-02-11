@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <title>EX 2 | Image Optimization</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+        <!-- Name -->
+        <!-- Date -->
+    </head>
+    <body id="top">
+        <nav>
+            <a href="#top">Image Optimization</a> |
+            <a href="#gif">GIF</a> |
+            <a href="#jpg">JPEG</a> |
+            <a href="#png">PNG</a> |
+            <a href="#exercise">Exercise</a>
+        </nav>
+        <div class="container">
+            <h1>Image Optimization</h1>
+            <p>The primary web file formats for the web are gif (pronounced “jiff”), jpeg (“jay-peg”), and png (“ping”). All three are bitmap graphics, made up of a checkerboard grid of thousands of tiny colored square pixels. Bitmap files are produced by digital cameras, and are easily created, edited, resized, and optimized for web use with Adobe’s Photoshop and other photo editing programs.</p>
+            <p>For efficient delivery over the Internet, virtually all web graphics are optimized to keep file sizes as small as possible while considering the files quality. Choosing between these file types is largely a matter of assessing:</p>
+            <ul>
+                <li>The nature of the image&mdash;is the image a “photographic” collection of smooth tonal transitions or a diagrammatic image with hard edges and lines</li>
+                <li>The effect of various kinds of file compression on image quality</li>
+                <li>The efficiency of a compression technique in producing the smallest file size that looks good</li>
+            </ul>
+            <section id="gif">
+                <hr>
+                <h2>GIF Images</h2>
+                <p>The CompuServe Information Service popularized the Graphic Interchange Format (gif) in the 1980s as an efficient means to transmit images across data networks. In the early 1990s the original designers of the World Wide Web adopted gif for its efficiency and widespread familiarity. Many images on the web are in gif format, and virtually all web browsers that support graphics can display gif files. Gif files incorporate a “lossless” compression scheme to keep file sizes at a minimum without compromising quality. However, gif files are 8-bit graphics and thus can only accommodate 256 colors.</p>
+                <h3>GIF file compression</h3>
+                <p>The gif file format uses a relatively basic form of file compression (Lempel Ziv Welch, or lzw) that squeezes out inefficiencies in data storage without losing data or distorting the image. The lzw compression scheme is best at compressing images with large fields of homogeneous color, such as logos and diagrams. It is much less efficient at compressing complicated “photographic” pictures with many colors and complex textures.</p>
+                <figure>
+                    <img src="assets/images/demo-files/11-4-700.jpg" alt="JPG vs GIF" width="700" height="315">
+                    <figcaption>The LZW compression built into the GIF graphic format is very good at efficiently saving diagrammatic graphics (right) but poor at compressing more complex photographic images (left).</figcaption>
+                </figure>
+                <h3>Dithering</h3>
+                <p>Full-color photographs can contain an almost infinite range of color values&mdash;gif images can contain no more than 256 colors. The process of reducing many colors to 256 or fewer is called dithering. With dithering, pixels of two colors are juxtaposed to create the illusion that a third color is present. Dithering a photographic image down to 256 colors produces an unpleasantly grainy image. In the past this technique was necessary to create images that would look acceptable on 256-color computer screens, but with today’s full-color displays there is seldom any need to dither an image. If you need a wider range of colors than the gif format can handle, try using your image editor to save the image in both jpeg and png formats (described below), compare the resulting file sizes and image qualities, and pick the best balance of file size and image quality.</p>
+                <figure>
+                    <img src="assets/images/demo-files/11-5-700.jpg" alt="Dithering" width="700" height="315">
+                    <figcaption>Dithering a full-color photograph (left) to a 256-color image (right) results in an image with lots of visual noise and harsh transitions between pixels of different colors. Luckily, such color dithering compromises are now mostly a thing of the past, since most users now have “true color” monitors that can display thousands or millions of colors.</figcaption>
+                </figure>
+                <h3>Improving GIF compression</h3>
+                <p>You can take advantage of the characteristics of lzw compression to improve its efficiency and thereby reduce the size of your gif graphics. The strategy is to reduce the number of colors in your gif image to the minimum number necessary and to remove colors that are not required to represent the image. A gif graphic cannot have more than 256 colors, but it can have fewer. Images with fewer colors will compress more efficiently under lzw compression. For maximum efficiency in gif graphics, use the minimum number of colors that gives you a good visual result.</p>
+                <h3>Interlaced GIF</h3>
+                <p>The conventional (noninterlaced) gif graphic downloads one line of pixels at a time from top to bottom, and browsers display each line of the image as it gradually builds on the screen. In interlaced gif files the image data is stored in a format that allows browsers that support this feature to build a low-resolution version of the full-sized gif picture on the screen while the file is downloading. Many people find the “fuzzy-to-sharp” animated effect of interlacing visually appealing, but the most important benefit of interlacing is that it gives the user a preview of the full picture while the picture downloads into the browser.</p>
+                <h3>Transparent GIF</h3>
+                <p>The gif format allows you to pick colors from the color lookup table of the gif to be transparent. You can use image-editing software such as Photoshop (and many shareware utility programs) to select colors in a gif graphic’s color palette to become transparent. Usually the color selected for transparency is the background color in the graphic. Unfortunately, the transparent property is not selective; if you make a color transparent, every pixel in the graphic that shares that color will also become transparent, which can cause unexpected results.</p>
+                <p>Adding transparency to a gif graphic can produce disappointing results when the image contains anti-aliasing. If you use an image-editing program like Photoshop to create a shape set against a background color, Photoshop will smooth the shape by inserting pixels of intermediate colors along the shape’s boundary edges. This smoothing, or anti-aliasing, improves the look of screen images by softening what would otherwise look like jagged edges. The trouble comes when you set the background color to transparent and then use the image on a Web page against a different background color. The anti-aliased pixels in the image will still correspond to the original background color. In the example below, when we change the background color from white to transparent (letting the gray web page background show through), an ugly white halo appears around the graphic.</p>
+                <figure>
+                    <img src="assets/images/demo-files/11-6-632.jpg" alt="White Halo" width="632" height="205">
+                    <figcaption>The dreaded “white halo” in transparent GIF graphics.</figcaption>
+                </figure>
+                <h4>When to use GIF compression</h4>
+                <ul>
+                    <li>Images with few colors</li>
+                    <li>Images with flat color</li>
+                    <li>Small icons</li>
+                    <li>Simple animations</li>
+                    <li>Simple images</li>
+                    <li>Line drawings</li>
+                    <li>Simple cartoons</li>
+                </ul>
+                <p class="button"><a href="#top">Top of the Page</a></p>
+            </section>
+            <section id="jpg">
+                <hr>
+                <h2>JPEG Images</h2>
+                <p>Another graphic file format commonly used on the web to minimize graphics file sizes is the Joint Photographic Experts Group (jpeg) compression scheme. Unlike gif graphics, jpeg images are full-color images that dedicate at least 24 bits of memory to each pixel, resulting in images that can incorporate 16.8 million colors.</p>
+                <p>jpeg images are used extensively among photographers, artists, graphic designers, medical imaging specialists, art historians, and other groups for whom image quality and color fidelity is important. A form of jpeg file called “progressive jpeg” gives jpeg graphics the same gradually built display seen in interlaced gifs. Like interlaced gifs, progressive jpeg images often take longer to load onto the page than standard jpegs, but they do offer the user a quicker preview.</p>
+                <p>jpeg compression uses a sophisticated mathematical technique called a discrete cosine transformation to produce a sliding scale of graphics compression. You can choose the degree of compression you wish to apply to an image in jpeg format, but in doing so you also determine the image’s quality. The more you squeeze a picture with jpeg compression, the more you degrade its quality. Jpeg can achieve incredible compression ratios, squeezing graphics down to as much as one hundred times smaller than the original file. This is possible because the jpeg algorithm discards “unnecessary” data as it compresses the image, and it is thus called a “lossy” compression technique. Notice how increasing the jpeg compression progressively degrades the details of the image. The checkered pattern and the dark “noise” pixels in the compressed image are classic jpeg compression artifacts. Note the extensive compression noise and distortion present in the image below, particularly around the leading edge of the fish’s head.</p>
+                <figure>
+                    <img src="assets/images/demo-files/11-7-600.jpg" alt="White Halo" width="600" height="483">
+                    <figcaption>JPEG compression comes at a cost: a big increase in visual noise and other compression artifacts that degrade the image quality if over-used.</figcaption>
+                </figure>
+                <h3>Save your original uncompressed images!</h3>
+                <p>Once an image is compressed using jpeg compression, data is lost and you cannot recover it from that image file. Always save an uncompressed original file of your graphics or photographs as backup. If your digital camera produces jpeg images, set aside the “camera original” jpeg files and work with copies when you edit the files for web use. Each time you save or resave an image in jpeg format, the image is compressed further and the artifacts and noise in the image increase.</p>
+                <h4>When to use JPG compression</h4>
+                <ul>
+                    <li>Still images only</li>
+                    <li>Real-world images like photos</li>
+                    <li>Complex coloring</li>
+                    <li>Shading of light and dark</li>
+                </ul>
+                <p class="button"><a href="#top">Top of the Page</a></p>
+            </section>
+            <section id="png">
+                <hr>
+                <h2>PNG Images</h2>
+                <p>PNG (Portable Network Graphics) was created to essentially replace, or at least improve upon the GIF format. PNG uses the DEFLATE compression method&mdash;the same algorithm used in zip and gzip. PNG is a lossless compression. Because of this, the PNG format tends to result in larger image sizes than JPEG when used for photographic type images. When used for line art type images, PNG results in much smaller file sizes than JPEG and almost always smaller sizes than GIF.</p>
+                <p>Unlike GIF, PNG is the same as JPEG in the respect that it is a single image format&mdash;meaning PNG doesn’t support animation. However, it does support a major advantage that neither JPEG or GIF support: alpha transparency. Pixels in a PNG image could be 50% transparent as opposed to the GIF format which would require those pixels to be either 100% transparent or 100% opaque. As you can imagine, this would allow for better blending and smoother graphics than GIF. PNG also implements several other improvements over the GIF format, but they aren’t necessary to get into.</p>
+                <p>Needless to say, PNG is a much better format to use than GIF in almost all respects with the exception of very small files (for example in background patterns). The PNG format drew early fire from web-designers as not being compatible with some older web-browsers.</p>
+                <p>As you probably know, there are two main types of PNG.</p>
+                <ul>
+                    <li>PNG8 (8-bit)&mdash;essentially the same as a GIF in terms of color limitations (256 colors max) but allows for alpha transparency</li>
+                    <li>PNG24 (24-bit)&mdash;allows for a much broader range of colors.</li>
+                </ul>
+                <h4>When to use PNG-8 compression</h4>
+                <ul>
+                    <li>Images that involve alpha transparency</li>
+                    <li>Icons</li>
+                    <li>Images with few colors</li>
+                    <li>Images with flat color</li>
+                    <li>Simple images</li>
+                    <li>Line drawings</li>
+                    <li>Simple cartoons</li>
+                </ul>
+                <h4>When to use PNG-24 compression</h4>
+                <ul>
+                    <li>Images that involve alpha transparency</li>
+                    <li>Still Images</li>
+                    <li>Photography</li>
+                </ul>
+                <p class="button"><a href="#top">Top of the Page</a></p>
+            </section>
+            <section id="exercise">
+                <hr>
+                <h2>Exercise</h2>
+                <p>Your task is to optimize ten images for web and link to them into the HTML below. Choose the images to compress from this <a href="https://www.dropbox.com/s/bekiu6brp2h6r8p/EX2-Source-Image-Files.zip?dl=0" style="text-decoration: underline;">Source Files</a>.</p>
+                <ul>
+                    <li>Use each of the four compression methods more than once</li>
+                    <li>For each image, note the compression method chosen, the file size prior to compression and the resulting file size</li>
+                    <li>Be sure that your images are in RGB color space</li>
+                    <li>Be sure that your images are 72ppi</li>
+                    <li>Reduce the width of your images to 600px if they are larger than 600px</li>
+                    <li>Do not enlarge the image if it is less than 600px wide</li>
+                </ul>
+                <figure>
+                    <img src="assets/images/2.jpg" width="600" height="903" alt="Walking Down A Dirt Road">
+                    <figcaption>
+                        <ul>
+                            <li>Original File Size: 1.55 MB</li>
+                            <li>Compression Method: JPEG</li>
+                            <li>Compressed File Size: 116.6 KB</li>
+                        </ul>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/images/5.png" width="300" height="300" alt="Firefox Logo">
+                    <figcaption>
+                        <ul>
+                            <li>Original File Size: 352 KB</li>
+                            <li>Compression Method: PNG-8</li>
+                            <li>Compressed File Size: 19.51 KB</li>
+                        </ul>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/images/6.jpg" width="600" height="900" alt="Pretty Woman Up Close">
+                    <figcaption>
+                        <ul>
+                            <li>Original File Size: 1.54 MB</li>
+                            <li>Compression Method: JPEG</li>
+                            <li>Compressed File Size: 31.79 KB</li>
+                        </ul>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/images/8.png" width="600" height="402" alt="Old Timey Action">
+                    <figcaption>
+                        <ul>
+                            <li>Original File Size: 707 KB</li>
+                            <li>Compression Method: PNG-8</li>
+                            <li>Compressed File Size: 82.68 KB</li>
+                        </ul>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/images/9.gif" width="300" height="300" alt="Internet Explorer Logo">
+                    <figcaption>
+                        <ul>
+                            <li>Original File Size: 352 KB</li>
+                            <li>Compression Method: GIF</li>
+                            <li>Compressed File Size: 14.4 KB</li>
+                        </ul>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/images/12.png" width="600" height="450" alt="Ravin' Rockin' Concert">
+                    <figcaption>
+                        <ul>
+                            <li>Original File Size: 791 KB</li>
+                            <li>Compression Method: PNG-24</li>
+                            <li>Compressed File Size: 558.5 KB</li>
+                        </ul>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/images/14.jpg" width="600" height="450" alt="Berries On A Plant">
+                    <figcaption>
+                        <ul>
+                            <li>Original File Size: 1.37 MB</li>
+                            <li>Compression Method: JPEG</li>
+                            <li>Compressed File Size: 51.61 KB</li>
+                        </ul>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/images/16.gif" width="600" height="851" alt="Bear and Fox Illustration">
+                    <figcaption>
+                        <ul>
+                            <li>Original File Size: 1.95 MB</li>
+                            <li>Compression Method: GIF</li>
+                            <li>Compressed File Size: 312.2 KB</li>
+                        </ul>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/images/18.jpg" width="600" height="458" alt="Photogenic Pond">
+                    <figcaption>
+                        <ul>
+                            <li>Original File Size: 1.05 MB</li>
+                            <li>Compression Method: JPEG</li>
+                            <li>Compressed File Size: 65.11 KB</li>
+                        </ul>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/images/19.png" width="300" height="300" alt="Google Chrome, But It's 3D">
+                    <figcaption>
+                        <ul>
+                            <li>Original File Size: 352 KB</li>
+                            <li>Compression Method: PNG-24</li>
+                            <li>Compressed File Size: 62.74 KB</li>
+                        </ul>
+                    </figcaption>
+                </figure>
+                <p class="button"><a href="#top">Top of the Page</a></p>
+            </section>
+            <hr>
+            <footer>
+                <p>Content from <a href="http://webstyleguide.com/wsg3/11-graphics/5-web-graphics-formats.html">The Web Style Guide Online Edition</a> and <a href="https://webdesign.tutsplus.com/articles/image-types-and-usage-in-web-design--webdesign-1298">Envato Tuts+</a>. Smooth scroll functionality is from the <a href="https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll">W3Schools.com</a>.</p>
+            </footer>
+        </div>
+        <!-- This is the JavaScript for Smooth Scrolling which can be found at: https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                // Add smooth scrolling to all links
+                $("a").on('click', function(event) {
+
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                        // Prevent default anchor click behavior
+                        event.preventDefault();
+
+                        // Store hash
+                        var hash = this.hash;
+
+                        // Using jQuery's animate() method to add smooth page scroll
+                        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 800, function(){
+
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location.hash = hash;
+                        });
+                    } // End if
+                });
+            });
+        </script>
+    </body>
+</html>

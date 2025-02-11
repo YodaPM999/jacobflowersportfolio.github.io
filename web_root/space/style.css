@@ -1,0 +1,125 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2 family=Arimo:ital,wght@0,400..700;1,400..700&family=Rowdies:wght@300;400;700&display=swap');
+
+/* Typography */
+.intro {
+    text-align: center;
+}
+.intro-p {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15%;
+}
+h1 {
+    font-family: "Rowdies", sans-serif; 
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48pt;
+    color: #00ffc1;
+}
+h2 {
+    font-family: "Arimo", sans-serif; 
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18pt;
+    color: #00ffc1;
+    padding-left: 2%;
+}
+p {
+    font-family: "Arimo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14pt;
+    color: #00ffc1;
+    background-image: url(bg-metal.jpg);
+    background-size: cover;
+    background-color: #194242;
+    max-width: 600px;
+    padding: 2%;
+    border-radius: 18px;
+}
+.sources {
+    background-image: none;
+    background-color: rgba(16, 20, 22, 0.0);
+}
+.button {
+    font-family: "Rowdies", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14pt;
+    color: #00ffc1;
+    background-color: rgba(16, 20, 22, 0.5);
+    padding: 2%;
+    margin: auto;
+    border-style: solid;
+    border-color: #00ffc1;
+    -webkit-border-radius: 20px;
+       -moz-border-radius: 20px;
+            border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 20px #00ffc1;
+       -moz-box-shadow: 0px 0px 20px #00ffc1;
+            box-shadow: 0px 0px 20px #00ffc1;
+    transition: color 0.5s;
+    transition: background-color 0.5s;
+}
+a:hover {
+    color: #101416;
+    background-color: rgba(0, 255, 193, 1.0);
+}
+.link {
+    color: #101416;
+}
+/* Navigation Bar */
+nav {
+    display: flex;
+    column-width: 12.5%;
+    background-image: url(bg-metal.jpg);
+    background-size: cover;
+    background-color: #194242;
+    padding: 2%;
+    right: 0;
+}
+
+
+/* Background */
+body {
+    background-image: url(bg.png);
+    background-color: #101416;
+}
+
+/* Grid */
+.grid {
+    display: grid;
+    justify-content: flex-end;
+    padding-right: 10%;
+}
+.container {
+    width: 100%;
+    background-image: url(bg-metal.jpg);
+    background-size: cover;
+    background-color: #194242;
+    margin-top: 6%;
+    padding: 0.1%;
+}
+.center {
+    text-align: center;
+    padding-right: 10%;
+}
+.sun .mercury .venus .earth .mars .jupiter .saturn .uranus .neptune {
+    margin: auto;
+}
+
+/* Animations */
+.planets {
+    animation: Idle 2s infinite;
+}
+.alien {
+    animation: Idle 2s infinite;
+    position: fixed;
+    padding-left: 2%;
+}
+@keyframes Idle {
+    0% { transform:translateY(0px) translateZ(0px) }
+    50% { transform:translateY(5px) translateZ(5px) }
+    100% { transform:translateY(0px) translateZ(0px) }
+}

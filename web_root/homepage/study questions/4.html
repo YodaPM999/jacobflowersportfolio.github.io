@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <title>Interactive Design I | Study Questions 4</title>
+        <!-- Name -->
+        <!-- Date -->
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Karla');
+            body { font-family: Karla, sans-serif; color: #666; }
+            li { margin-bottom: 1em; }
+        </style>
+    </head>
+    <body>
+        <ol>
+            <li>
+                <strong>What are the five different position values?</strong><br>
+                The five different position values are static, relative, fixed, absolute, and sticky.
+            </li>
+            <li>
+                <strong>Which position do HTML elements have by default?</strong><br>
+                HTML element are static by default.
+            </li>
+            <li>
+                <strong>Explain how position: relative; works.</strong><br>
+                An element with position: relative; is one that is positioned relative to its normal position.
+            </li>
+            <li>
+                <strong>An element with position: fixed; is positioned relative to what?</strong><br>
+                An element with position: fixed; is positioned relative to the viewport and will always stay in the same place even when the user scrolls up or down and zooms in and out.
+            </li>
+            <li>
+                <strong>How is an element with position: absolute; positioned?</strong><br>
+                An element with position: absolute; is positioned relative to that of the nearest positioned ancestor. If there is no specified positioned ancestor, it uses the document body instead.
+            </li>
+            <li>
+                <strong>Does an element with fixed positioning scroll?</strong><br>
+                No it does not.
+            </li>
+            <li>
+                <strong>How does an element with position: sticky; work?</strong><br>
+                An element with position: sticky; alternates between relative and fixed depending on the user's scroll position. It is positioned relative until the page is scrolled to a certain area of the viewport, where it will then toggle to position: fixed;
+            </li>
+            <li>
+                <strong>A sticky element toggles between which two positioning properties?</strong><br>
+                A sticky element toggles between relative and fixed.
+            </li>
+            <li>
+                <strong>Which property specifies the stack order of an element (which element should be placed in front of, or behind, the others) when elements are overlapping?</strong><br>
+                The Z-index property.
+            </li>
+            <li>
+                <strong>Which CSS property controls what happens to content that is too big to fit into an area?</strong><br>
+                The overflow property.
+            </li>
+            <li>
+                <strong>Which overflow value creates a scrollbar in order to see the overflow content?</strong><br>
+                The scroll property.
+            </li>
+            <li>
+                <strong>What are the four float property values?</strong><br>
+                The four float property values are left, right, none, and inherit.
+            </li>
+            <li>
+                <strong>Which property allows you to wrap text around an image?</strong><br>
+                The float property.
+            </li>
+            <li>
+                <strong>Which property specifies what elements can float beside the cleared element and on which side?</strong><br>
+                The clear property.
+            </li>
+            <li>
+                <strong>Explain the Clearfix Hack.</strong><br>
+                The clearfix hack is a command that will fix the issue of a floated element overflowing outside of its container by adjusting the container size to fit the overflowing element.
+            </li>
+            <li>
+                <strong>What is the major difference between display: inline; and display: inline-block;?</strong><br>
+                The main difference is that display: inline-block can have it's width and height adjusted, while display: inline values can not be adjusted. Another key difference is that display: inline-block respects top and bottom margins or paddings, while display: inline does not.
+            </li>
+            <li>
+                <strong>What is one common use of display: inline-block;?</strong><br>
+                One common use for display: inline-block is displaying a list of items horizontally instead of displaying them vertically.
+            </li>
+            <li>
+                <strong>How do you horizontally center a block element (like &lt;div&gt;)?</strong><br>
+                By using margin: auto;
+            </li>
+            <li>
+                <strong>What are three ways to center an element vertically in CSS?</strong><br>
+                Using padding for the top and bottom margins, making the line-height property value equal to that of the height property, and using the positioning and transform properties to align it yourself.
+            </li>
+            <li>
+                <strong>What is a combinator?</strong><br>
+                A combinator is used to explain the relationship between a group of selectors.
+            </li>
+            <li>
+                <strong>What are the four different combinators?</strong><br>
+                The four different combinators are the descendant selector, the child selector, the adjacent sibling selector, and the general sibling selector.
+            </li>
+            <li>
+                <strong>What is a descendant selector?</strong><br>
+                The descendant selector selects and matches all elements that are descendants of a specified element.
+            </li>
+            <li>
+                <strong>What is a child selector?</strong><br>
+                The child selector selects all of the elements that are the children of a specified element.
+            </li>
+            <li>
+                <strong>What is an adjacent sibling selector?</strong><br>
+                The adjacent sibling selector selects and element that directly follows after another specified element.
+            </li>
+            <li>
+                <strong>What are Pseudo-classes?</strong><br>
+                A pseudo-class is used to define a special state of an element.
+            </li>
+            <li>
+                <strong>Give three examples of what a pseudo-class can be used for.</strong><br>
+                A pseudo-class can be used to style an element whe a mouse hovers over it, give a different style to visited and unvisited links, and style an element when it comes into focus.
+            </li>
+             <li>
+                <strong>Which pseudo-class allows you to style an &lt;a&gt; element when a cursor is over it?</strong><br>
+                The a:hover pseudo-class.
+            </li>
+            <li>
+                <strong>What are Pseudo-elements?</strong><br>
+                A pseudo-element is used to style a specified part or parts of an element.
+            </li>
+            <li>
+                <strong>What are the opacity property values and which is more transparent?</strong><br>
+                The opacity property is what specifies the transparency of an element.
+            </li>
+            <li>
+                <strong>The opacity property is often used together with the which selector to change the opacity on mouse-over?</strong><br>
+                The :hover selector.
+            </li>
+            <li>
+                <strong>When using the opacity property to add transparency to the background of an element, all of its child elements inherit the same transparency. What can happen to text inside a transparent element?</strong><br>
+                It can become fully transparent alongside the background and no longer be readable.
+            </li>
+            <li>
+                <strong>What is an image sprite and why are they used?</strong><br>
+                An image sprite is a collection of images grouped together into a single image. It's mainly used to reduce the loading time and save bandwidth for a webpage.
+            </li>
+            <li>
+                <strong>What is an attribute selector?</strong><br>
+                The attribute selector is used to select elements that have a specified attribute.
+            </li>
+            <li>
+                <strong>When expressing length in CSS, do you use whitespace between the number and the unit?</strong><br>
+                No, you do not.
+            </li>
+            <li>
+                <strong>What are the two types of length units?</strong><br>
+                The two types of length units are absolute units and relative units.
+            </li>
+            <li>
+                <strong>What are two common length units?</strong><br>
+                in and cm.
+            </li>
+            <li>
+                <strong>In CSS, are negative lengths are allowed?</strong><br>
+                Only for some properties.
+            </li>
+            <li>
+                <strong>What is specificity?</strong><br>
+                Specificity is essentially a score that determines which selector in a group of selectors has the highest priority and will be applied to an element.
+            </li>
+            <li>
+                <strong>Every selector has its place in the specificity hierarchy. What are the four categories which define the specificity level of a selector?</strong><br>
+                The four categories that define the specificity level of a selector are Inline styles, IDs, Classes/pseudo-classes/attribute selectors, and elements/pseudo-elements.
+            </li>
+            <li>
+                <strong>If the same rule is written twice into the external style sheet, which rule will be applied?</strong><br>
+                The latest rule.
+            </li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,266 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Lobster&display=swap');
+
+/* Background Images */
+.season-05 {
+    background-image: url(images/2005.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 724px;
+    background-color: #c41e1e;
+}
+.season-06 {
+    background-image: url(images/2006.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    height: 724px;
+}
+.season-07 {
+    background-image: url(images/2007.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    height: 724px;
+}
+.season-08 {
+    background-image: url(images/2008.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    height: 724px;
+}
+.season-09 {
+    background-image: url(images/2009.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    height: 724px;
+}
+.season-10 {
+    background-image: url(images/2010.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    height: 724px;
+}
+.season-11 {
+    background-image: url(images/2011.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    height: 724px;
+}
+.season-12 {
+    background-image: url(images/2012.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    height: 724px;
+}
+.season-13 {
+    background-image: url(images/2013.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    height: 724px;
+}
+.season-14 {
+    background-image: url(images/2014.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    height: 724px;
+}
+.season-15 {
+    background-image: url(images/2015.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    height: 724px;
+}
+.season-16 {
+    background-image: url(images/2016.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    height: 724px;
+}
+.season-17 {
+    background-image: url(images/2017.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    height: 724px;
+}
+.season-18 {
+    background-image: url(images/2018.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    height: 724px;
+}
+.season-19 {
+    background-image: url(images/2019.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    height: 924px;
+}
+.img-position {
+    position: relative;
+}
+/* Sidebar Menu */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #c41e1e;
+    overflow-x: auto;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+.year {
+    padding: 4px 8px 4px 32px;
+}
+.x {
+    
+}
+.sidebar a {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+.sidebar a:hover {
+    color: #c41e1e;
+    background-color: white;
+}
+.sidebar .close {
+    position: absolute;
+    top: 0;
+    font-size: 36px;
+    margin-left: 168px;
+    padding: 8px 32px 8px 32px;
+}
+.open {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #c41e1e;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    position: fixed;
+    z-index: 1;
+}
+.open:hover {
+    color: #c41e1e;
+    background-color: white;
+}
+@keyframes button-close {
+    0% { margin-left: 250px; }
+    100% { margin-left: 0px; }
+}
+@keyframes button-open {
+    0% { margin-left: 0px; }
+    100% { margin-left: 250px; }
+}
+
+/* Typography */
+
+h1 {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60pt;
+    text-align: center;
+    color: white;
+}
+h2 {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36pt;
+    text-align: center;
+    color: white;
+    padding-top: 80px;
+}
+
+p {
+    font-family: "Frank Ruhl Libre", serif;
+    font-weight: 400;
+    font-style: normal; 
+    font-size: 14pt;
+    width: 420px;
+    color: white;
+    background-color: #751212;
+    padding: 1%;
+}
+.caption-container {
+    position: relative;
+}
+.caption {
+    position: absolute;
+    bottom: 4px;
+    width: 630px;
+    padding: 20px;
+    opacity: 0%;
+}
+.caption:hover {
+    opacity: 100%;
+}
+.figcaption {
+    font-family: "Frank Ruhl Libre", serif;
+    font-weight: 200;
+    font-style: normal; 
+    font-size: 10pt;
+    color: white;
+    background: rgba(117, 18, 18, 0.7);
+    padding: 10px;
+}
+/* Grid */
+
+.grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    padding: 20px;
+}
+
+/* Background Color */
+
+body {
+    background-color: #751212;
+}
+/* Media Queries */
+@media screen and (max-width: 991px) {
+    .season-12, .season-14, .season-16, .season-17, .season-18, .season-19, { height: 1024px; }
+    img { height: 315px; }
+    .grid { display: grid; grid-column: auto; }
+    h2 { font-size: 30pt; }
+    p { font-size: 12pt; margin-left: 45px; }
+}

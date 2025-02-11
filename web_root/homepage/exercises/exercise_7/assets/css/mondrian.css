@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*	A CSS rule has the following syntax:
+selector { property: style; property: style; property: style; }
+For a list of CSS properties, see the w3Schools website @ https://www.w3schools.com/cssref/default.asp 
+
+CSS Grid Tutorial: https://www.w3schools.com/css/css_grid.asp
+*/
+
+/*	Your Name
+Date
+==================================================
+Table of Contents
+==================================================
+:: Grid
+:: Colors
+*/
+
+/*	Grid
+================================================== */
+.grid-container {
+    width: 1200px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 100px 430px 350px 260px;
+    grid-template-rows: 550px 250px 250px 80px;
+}
+.item-1, .item-3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.item-2, .item-4 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+.item-5, .item-6 {
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+.item-8 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+/*	Colors
+================================================== */
+.gray   { background-color: #555; }
+.black  { background-color: #000; }
+.white  { background-color: #fff; }
+.blue   { background-color: #025; }
+.yellow { background-color: #ff2; }
+.red    { background-color: #b12; }

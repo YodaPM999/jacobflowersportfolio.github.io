@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>EX 8 | Responsive Framework</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <div class="pagewrap">
+            <header>
+                <!--Main header area-->
+                <img src="assets/images/fp-logo.png" alt="French Paper Logo" class="logo">
+                <h1>Childhood Classics</h1>
+                <nav class="topnav" id="myTopnav">
+                    <a href="index.html">Slideshow</a>
+                    <a href="three.html">Three Column</a>
+                    <a href="two.html">Two Column</a>
+                    <a href="one.html" class="current">One Column</a>
+                    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+                </nav>
+            </header>
+            <div class="content">
+                <div class="item1">
+                    <img src="assets/images/1-crop.jpg" alt="pic 1" class="responsive-image">
+                    <h2>Mario Kart: Double Dash!! (2003)</h2>
+                    <p>The Mario Kart franchise is currently one of Nintendo's most popular franchises, and for good reason. For 30 years, this series has entertained millions of gamers with its refined controls, zany powerups, dynamic race courses, and colorful cast of iconic characters. Of the 9 entries, I find myself going back to this GameCube classic the most. The gimmick of having two racers control one kart added a whole new layer of fun to the series' already fantastic kart racer formula. Each character also had their own unique powerup, which gave the player a reason to try out each one and see which powerup fit with their playstyle the best. This combined with the two driver mechanic gave the player the ability to mix and match character combinations, adding a unique strategy that no other game in the series has come close to matching in my opinion.</p>
+                    <p>Even when you ignore all the fancy gimmicks, Double Dash!! still has everything you'd want in a Mario Kart game. There is a certain charm to the simplistic, vibrant art direction that this game has that gives both it's characters and their environments a lot of life. It screams "Mario", and I love it. While it features a small number of just 16 tracks, each one is super fun to play and is geared to the games chaotic vibe. There may not be a large quantity, but there is certainly a level of quality that makes it so replaying these levels never get old. When it's all said and done, even though the series may objectively improve with each new entry, there are so many special things about Mario Kart: Double Dash!! that make this one of my all time favorite video games.</p>
+                    <p><a href="https://www.youtube.com/watch?v=RfJ7FoVvOCA" class="more-info">Niiiiiintendo! Wahooo!</a></p>
+                </div>
+            </div>
+            <footer>
+                <p>© Images from random Google searches. Used for educational purposes only. Fun fact: two of the games listed here are older than I am.</p>
+            </footer>
+        </div>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*	Your Name
+/*	Date 
+==================================================
+Table of Contents
+==================================================
+:: Type Selectors
+:: Class Selectors
+
+
+/*	Type Selectors
+================================================== */
+@import url('https://fonts.googleapis.com/css?family=Karla');
+body {
+    font-family: Karla, sans-serif; line-height: 1.7em; font-size: 1.05em; color: #666; margin: 0; padding-top: 70px; }
+body, section { padding-top: 70px; }
+a:link {
+    color: #333; text-decoration: none; font-weight: bold; }
+a:visited {
+    color: #069; }
+a:hover {
+    color: #6cf; }
+h1, h2, h3, h4 {
+    margin-top: 1.5em; margin-bottom: .25em; }
+p {
+    margin-top: 0; }
+ul {
+    margin-bottom: 2em; }
+figcaption {
+    line-height: 1em; font-size: small; font-weight: bold; width: 600px;
+    margin: 0 auto 2em auto; }
+figure {
+    margin: auto; }
+figure img {
+    margin: auto; display: block; margin-bottom: 1em; }
+footer {
+    font-size: small; }
+iframe {
+    display: block; margin: 0 auto; }
+nav { position: fixed; background-color: mistyrose; 
+    padding: 20px; font-weight: bold; font-size: .9em; width: 100%; top: 0; text-transform: uppercase; letter-spacing: .15em; }
+
+/*	Class Selectors
+================================================== */
+.button a:link, .button a:visited {
+    padding: 1em; font-size: .75em; border: 1px solid gray; color: gray; font-weight: bold; text-transform: uppercase; display: inline-block; text-decoration: none; }
+.button a:hover {
+    background-color: #6cf; color: white; border: 1px solid white; }
+.container { max-width: 1000px; margin: auto; }
